@@ -1,0 +1,19 @@
+Job Title: Senior Python Engineer
+Location: Remote
+Experience: 5+ Years
+
+About the Role:
+We are looking for a Senior Python Engineer to help build our next-generation AI products. The ideal candidate will have extensive experience in Python, API integration, and full-stack development with a modern web framework.
+
+Key Responsibilities:
+- Design, build, and maintain efficient, reusable, and reliable Python code.
+- Integrate user-facing elements into applications using Streamlit or React.
+- Work closely with data scientists to deploy machine learning models (specifically LLMs and GenAI) into production.
+- Write robust unit and integration tests.
+
+Required Skills:
+- 5+ years of software engineering experience focusing on Python.
+- Strong understanding of REST APIs and JSON data structures.
+- Experience with at least one modern web framework (Streamlit, Flask, FastAPI).
+- Familiarity with AI/ML tools, specifically Google Gemini or OpenAI APIs.
+- Excellent communication and collaboration skills.

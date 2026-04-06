@@ -1,0 +1,26 @@
+# Python and Streamlit common ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.venv/
+env.bak/
+venv.bak/
+
+# App-specific mock data (optional, but usually good to ignore if it contains real resumes in the future)
+# For now, we will NOT ignore sample_data so they get pushed as part of the POC, 
+# but if you add real resumes, uncomment the line below:
+# sample_data/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
