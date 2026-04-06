@@ -1,4 +1,4 @@
-# AI Resume Screener 💼
+# AI Resume Screener
 
 A proof-of-concept AI-powered resume screening tool built for internal recruitment teams. 
 

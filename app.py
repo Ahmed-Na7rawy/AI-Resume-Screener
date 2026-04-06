@@ -11,7 +11,6 @@ import time
 # Configure Streamlit page details
 st.set_page_config(
     page_title="AI Resume Screener",
-    page_icon="📄",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -134,12 +133,12 @@ def analyze_resume(resume_text, job_description, api_key, model_name="gemini-1.5
 # UI LAYOUT & LOGIC
 # -----------------------------------------------------
 def main():
-    st.title("💼 AI Resume Screener")
+    st.title("AI Resume Screener")
     st.markdown("Upload a job description and a batch of resumes to get instant, AI-driven candidate match rankings.")
     
     # Sidebar: Config
     with st.sidebar:
-        st.header("⚙️ Configuration")
+        st.header("Configuration")
         api_key = st.text_input("Google Gemini API Key", type="password", help="Get your API key from Google AI Studio.")
         
         selected_model = "gemini-1.5-flash"
@@ -168,7 +167,7 @@ def main():
     col1, col2 = st.columns([1, 1], gap="large")
     
     with col1:
-        st.subheader("📝 Job Description")
+        st.subheader("Job Description")
         job_desc = st.text_area(
             "Paste the complete job description here...",
             height=300,
@@ -176,7 +175,7 @@ def main():
         )
         
     with col2:
-        st.subheader("📄 Candidate Resumes")
+        st.subheader("Candidate Resumes")
         uploaded_files = st.file_uploader(
             "Upload one or more resume PDFs", 
             type=["pdf"], 
@@ -189,16 +188,16 @@ def main():
     st.markdown("---")
     
     # Execution triggering
-    if st.button("🚀 Run Screening Analysis", type="primary"):
+    if st.button("Run Screening Analysis", type="primary"):
         # Validation checks
         if not api_key:
-            st.error("⚠️ Please enter your Google Gemini API Key in the sidebar.")
+            st.error("Please enter your Google Gemini API Key in the sidebar.")
             st.stop()
         if not job_desc.strip():
-            st.error("⚠️ Please provide a job description.")
+            st.error("Please provide a job description.")
             st.stop()
         if not uploaded_files:
-            st.error("⚠️ Please upload at least one PDF resume.")
+            st.error("Please upload at least one PDF resume.")
             st.stop()
             
         st.info("Starting analysis... this may take a moment depending on the number of resumes.")
@@ -235,7 +234,7 @@ def main():
                 
             progress_bar.progress((idx + 1) / len(uploaded_files))
             
-        st.success("✅ Analysis Complete!")
+        st.success("Analysis Complete!")
         
         # Process results
         if results:
@@ -243,7 +242,7 @@ def main():
             # Sort by highest score first
             df = df.sort_values(by="Match Score", ascending=False).reset_index(drop=True)
             
-            st.subheader("🏆 Ranked Candidates")
+            st.subheader("Ranked Candidates")
             
             # Overview visual table
             st.dataframe(
