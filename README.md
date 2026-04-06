@@ -1,5 +1,7 @@
 # AI Resume Screener
 
+**🟢 Live Demo:** [https://ai-resume-screener2026.streamlit.app/](https://ai-resume-screener2026.streamlit.app/)
+
 A proof-of-concept AI-powered resume screening tool built for internal recruitment teams. 
 
 This tool allows recruiters to:
